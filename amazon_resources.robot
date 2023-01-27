@@ -60,3 +60,25 @@ Remover o produto do carrinho
 
 Verificar se o carrinho fica vazio
     Wait Until Element Is Visible    locator=//h1[contains(.,'vazio.')]  timeout=30s
+
+Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br
+
+Quando adicionar o produto "${PRODUTO}" no carrinho
+    Digitar o nome do produto "${PRODUTO}" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Verificar o resultado da pesquisa se está listando o produto "${PRODUTO}"
+    Adicionar o produto "${PRODUTO}" no carrinho
+
+Então o produto "${PRODUTO}" deve ser mostrado no carrinho
+    Verificar se o produto "${PRODUTO}" foi adicionado com sucesso
+
+E existe o produto "${PRODUTO}" no carrinho
+    Quando adicionar o produto "${PRODUTO}" no carrinho
+    Então o produto "${PRODUTO}" deve ser mostrado no carrinho
+
+Quando remover o produto do carrinho
+    Remover o produto do carrinho
+
+Então o carrinho deve ficar vazio
+    Verificar se o carrinho fica vazio

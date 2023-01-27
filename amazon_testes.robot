@@ -44,3 +44,18 @@ Caso de Teste 04 - Remover Produto do Carrinho
     Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
     Remover o produto do carrinho
     Verificar se o carrinho fica vazio
+
+Caso de Teste 03 - Adicionar Produto no Carrinho GHERKIN
+    [Documentation]    Esse teste verifica a adição de um produto no carrinho de compras
+    [Tags]             adicionar_carrinho  gherkin
+    Dado que estou na home page da Amazon.com.br
+    Quando adicionar o produto "Console Xbox Series S" no carrinho
+    Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
+ 
+Caso de Teste 04 - Remover Produto do Carrinho GHERKIN
+    [Documentation]    Esse teste verifica a remoção de um produto no carrinho de compras
+    [Tags]             remover_carrinho  gherkin
+    Dado que estou na home page da Amazon.com.br
+    E existe o produto "Console Xbox Series S" no carrinho
+    Quando remover o produto do carrinho
+    Então o carrinho deve ficar vazio
