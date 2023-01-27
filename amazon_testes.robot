@@ -15,10 +15,10 @@ Caso de Teste 01 - Acesso ao menu "Eletrônicos"
     Verificar se o título da página fica "Livros | Amazon.com.br"
     Verificar se aparece a categoria "Livros em Oferta"
 
-# Caso de Teste 02 - Pesquisa de um Produto
-#     [Documentation]  Esse teste verifica a busca de um produto
-#     [Tags]           busca_produtos  lista_busca
-#     Acessar a home page do site Amazon.com.br
-#     Digitar o nome do produto "Xbox Series S" no campo de pesquisa
-#     Clicar no botão de pesquisa
-#     Verificar o resultado da pesquisa se está listando o produto pesquisado
+Caso de Teste 02 - Pesquisa de um Produto
+    [Documentation]  Esse teste verifica a busca de um produto
+    [Tags]           busca_produtos  lista_busca
+    Acessar a home page do site Amazon.com.br
+    Digitar o nome do produto "1984" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Verificar o resultado da pesquisa se está listando o produto "1984"
